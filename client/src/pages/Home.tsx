@@ -81,7 +81,7 @@ export default function Home() {
       <SectionDivider variant="violet" />
 
       {/* Contact */}
-      <ContactSection visitorType={visitorType} />
+      <ContactSection visitorType={visitorType} onAskWhit={() => setAskWhitOpen(true)} />
 
       {/* Contact → Footer transition */}
       <SectionDivider variant="fade" />
