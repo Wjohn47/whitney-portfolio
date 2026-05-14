@@ -1,0 +1,35 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": null,
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/110102467/Ze9D6rPfroPwfnzFMpwZ4R",
+    "access_key_id": "ASIAZV3A2ECZF7UERMVK",
+    "secret_access_key": "vlyWIZcftuiJ3K8yT2ulVOC5xj+QZyyF/2gEmOfX",
+    "session_token": "IQoJb3JpZ2luX2VjEJ7//////////wEaCXVzLWVhc3QtMSJGMEQCIGpB+tFtDfQbrH2lZMMhd6lNf4n7Xr1b4sfQa1y9I7+IAiBdTQecAe5Cp90tENztZXzFW6u5c3PxQtM8uuJD8b1a2CrkAwhmEAQaDDY2NTM4NjA5ODg2NiIMGCHH0YpVB4BEdILiKsEDgM3QKKdfcVd7LuIdejU6C9v5uHJsQadOimTkXhDwDFJmxJhlQYi7zV51pDgZCR3kuNtinQqOH6hwUwIfsHToQ5QyIShUIdcwBPojr/edHtnZJL8o59gmI2oFU9mIs6MGe2oUGGbdeWJsltzTUKvXWlG8jXRtg77gOUurqQQpm+InTcgBhG5wp5LryqW1kTqqbiZOqXwIeAcFgek0kYi7ObfePbz/iVcA7w0YkIQREKwMRYzwPwxIm0mCj+yyKL1Wnqjp8KUBuFk524M2ptTTsRenE52b8yBRLoeTL0HTUOT+i8NqOtLO8PVCVCWn7x5TF1pR+oqvGwkgfwrCAByv3E8Ejsbv5BUWHDJcllNfK9nvv7jDJO2npzmi3MoZL6V5mODgkiv7FFATchTa9WUx5jGa6DkHa22f87QC3AgGNUmkNgfLHxsa8JHNz9ErIUYYRSCEU2E61fWDc0vYUEv5s3IH7Z7d5rHEWEx9T9xJQuY4iS8oKEburWmtKGFjWIGP0k7fHGardPKZUFF3zm6/FrLs2Jrqhm97asCv7BAqtLiDAxWaTGH6KtE9sH5xbmx8WHkGL69DbwO3ID7ysz/AijUwvvWY0AY6ngHhp8+BxpHn51JYv8TpI3saQwbE+VGBqgN/dVuXh/klg7u0sdWoGxctdNLrjKvtbZFGT/411N9GEx98Grmqv761sKOEsEMmHyerxR99wh7otbQozjMxxIkx+NOFMy1q+lmd3UT9Ah+a3SqPyTqNYV09TWaV3Yi+V5qyVOVAXIQAjAsw4YWqqZ7hjjgXGR2qSFt4d6c0Vd4DJBxaxPbIYg==",
+    "expiration": "2026-05-15T09:12:30.000Z"
+  },
+  "name": "whitney-portfolio",
+  "path": "/home/ubuntu/whitney-portfolio",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "HRw6Y5yYrkPmP4Ew8Wtbux",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "XLJ5X5vG24SykDYncszFMa",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "Whitney Johnson",
+    "OWNER_OPEN_ID": "D3MFkQ5cZ3k7pSmVQbggqk",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "bc3f30b6-d39e-4f18-89ca-67325950fb26",
+    "VITE_APP_ID": "Ze9D6rPfroPwfnzFMpwZ4R",
+    "VITE_APP_LOGO": "",
+    "VITE_APP_TITLE": "Whitney Johnson Portfolio",
+    "VITE_FRONTEND_FORGE_API_KEY": "AJuQb58qeBQGnGYHCMYHBX",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
