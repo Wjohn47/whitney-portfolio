@@ -7,6 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const ABOUT_BG = "https://d2xsxph8kpxj0f.cloudfront.net/110102467/Ze9D6rPfroPwfnzFMpwZ4R/whitney-about-texture-GLHth9Ez69mScSrEJcu5Jn.webp";
+const HEADSHOT = "/manus-storage/whitney-headshot_47def6d7.webp";
 
 const TIMELINE = [
   { year: "2023 - Present", role: "Founder, AI with Whit", note: "AI education & automation for everyday people" },
@@ -131,12 +132,48 @@ export default function AboutSection() {
             </motion.div>
           </div>
 
-          {/* Right: Timeline */}
+          {/* Right: Photo + Timeline */}
           <motion.div
             initial={{ opacity: 0, x: 24 }}
             animate={visible ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
+            {/* Headshot */}
+            <div className="relative mb-10">
+              <div
+                className="relative overflow-hidden rounded-sm"
+                style={{
+                  aspectRatio: "4 / 5",
+                  maxWidth: "320px",
+                  boxShadow: "0 0 40px rgba(155,109,255,0.15), 0 0 80px rgba(226,201,138,0.06)",
+                  border: "1px solid rgba(240,235,224,0.1)",
+                }}
+              >
+                <img
+                  src={HEADSHOT}
+                  alt="Whitney Johnson"
+                  className="w-full h-full object-cover object-top"
+                />
+                {/* Subtle iridescent overlay at bottom */}
+                <div
+                  className="absolute inset-x-0 bottom-0"
+                  style={{
+                    height: "35%",
+                    background: "linear-gradient(to top, rgba(7,4,9,0.65) 0%, transparent 100%)",
+                  }}
+                />
+              </div>
+              {/* Decorative accent line */}
+              <div
+                className="absolute -bottom-3 left-0"
+                style={{
+                  width: "60px",
+                  height: "2px",
+                  background: "linear-gradient(90deg, #9b6dff, #8be9fd)",
+                }}
+              />
+            </div>
+
             <p className="section-label mb-8">Experience</p>
             <div className="space-y-0">
               {TIMELINE.map((item, i) => (
