@@ -35,7 +35,7 @@ const CTA_BY_PATH: Record<VisitorType, { headline: string; sub: string; button: 
 
 const DEFAULT_CTA = {
   headline: "Let's talk",
-  sub: "Whether you're hiring, need help, or just want to connect — I'm here.",
+  sub: "Whether you're hiring, need help, or just want to connect, I'm here.",
   button: "Get in Touch",
 };
 
@@ -63,7 +63,7 @@ export default function ContactSection({ visitorType }: ContactSectionProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
-    toast("Message received — I'll be in touch within 48 hours.", {
+    toast("Message received. I'll be in touch within 48 hours.", {
       description: "Thank you for reaching out, " + form.name + ".",
     });
   };
@@ -140,9 +140,9 @@ export default function ContactSection({ visitorType }: ContactSectionProps) {
                   <a
                     href={item.href}
                     className="text-sm transition-colors duration-200"
-                    style={{ color: "rgba(200,192,176,0.65)" }}
+                    style={{ color: "rgba(210,204,190,0.85)" }}
                     onMouseEnter={(e) => (e.currentTarget.style.color = "#f0ebe0")}
-                    onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(200,192,176,0.65)")}
+                    onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(210,204,190,0.85)")}
                   >
                     {item.value}
                   </a>
@@ -171,7 +171,7 @@ export default function ContactSection({ visitorType }: ContactSectionProps) {
                 <h3 className="font-display text-2xl font-semibold mb-3" style={{ color: "#f0ebe0" }}>
                   Message received
                 </h3>
-                <p className="text-sm" style={{ color: "rgba(200,192,176,0.65)" }}>
+                <p className="text-sm" style={{ color: "rgba(210,204,190,0.85)" }}>
                   I'll be in touch within 48 hours. Talk soon.
                 </p>
               </motion.div>

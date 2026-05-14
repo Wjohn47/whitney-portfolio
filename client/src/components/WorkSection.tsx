@@ -42,7 +42,7 @@ const PROJECTS = [
       recruiter: "Designed and delivered AI training curriculum for non-technical staff. Measured adoption, iterated on content, and achieved 78% tool usage in 90 days.",
       client: "I can run this workshop for your team. Practical, plain-language, no jargon. People leave knowing how to actually use AI.",
       collaborator: "I'm building a public version of this curriculum through AI with Whit. Let's talk if you want to co-facilitate.",
-      explorer: "The hardest part wasn't the AI — it was helping people feel safe enough to try it. That's what this project was really about.",
+      explorer: "The hardest part wasn't the AI. It was helping people feel safe enough to try it. That's what this project was really about.",
     },
     before: "Team intimidated by AI tools, no guidance, low confidence, inconsistent usage",
     after: "Structured curriculum, hands-on practice, 78% adoption, ongoing peer support",
@@ -58,7 +58,7 @@ const PROJECTS = [
     accent: "#e2c98a",
     tldr: {
       recruiter: "Mapped, audited, and redesigned 12 workflows. Implemented automation via n8n and Salesforce. Delivered measurable efficiency gains.",
-      client: "I can audit your current workflows and show you exactly where the waste is — and how to fix it.",
+      client: "I can audit your current workflows and show you exactly where the waste is, and how to fix it.",
       collaborator: "Interested in building open-source workflow templates for small CX teams. Let's connect.",
       explorer: "Every workflow I redesign starts with the same question: why is this step here? Usually nobody knows.",
     },
@@ -165,7 +165,7 @@ export default function WorkSection({ visitorType }: WorkSectionProps) {
                     >
                       {project.subtitle}
                     </p>
-                    <p className="text-sm leading-relaxed mb-5" style={{ color: "rgba(200,192,176,0.65)" }}>
+                    <p className="text-sm leading-relaxed mb-5" style={{ color: "rgba(210,204,190,0.85)" }}>
                       {project.description}
                     </p>
 
@@ -176,7 +176,7 @@ export default function WorkSection({ visitorType }: WorkSectionProps) {
                           key={tag}
                           className="font-mono-label text-xs px-2 py-1 rounded-sm"
                           style={{
-                            color: "rgba(200,192,176,0.5)",
+                            color: "rgba(210,204,190,0.68)",
                             background: "rgba(240,235,224,0.04)",
                             border: "1px solid rgba(240,235,224,0.08)",
                           }}
@@ -200,7 +200,7 @@ export default function WorkSection({ visitorType }: WorkSectionProps) {
                         <p className="font-mono-label text-xs mb-2" style={{ color: project.accent }}>
                           TLDR for {visitorType}
                         </p>
-                        <p className="text-sm leading-relaxed" style={{ color: "rgba(200,192,176,0.8)" }}>
+                        <p className="text-sm leading-relaxed" style={{ color: "rgba(220,214,200,0.92)" }}>
                           {project.tldr[visitorType]}
                         </p>
                       </motion.div>
@@ -251,11 +251,11 @@ export default function WorkSection({ visitorType }: WorkSectionProps) {
                           }}
                         />
                         <div className="flex justify-between mt-1">
-                          <span className="font-mono-label text-xs" style={{ color: "rgba(200,192,176,0.4)" }}>Before</span>
+                          <span className="font-mono-label text-xs" style={{ color: "rgba(210,204,190,0.60)" }}>Before</span>
                           <span className="font-mono-label text-xs" style={{ color: project.accent }}>After</span>
                         </div>
                       </div>
-                      <p className="text-xs leading-relaxed" style={{ color: "rgba(200,192,176,0.65)" }}>
+                      <p className="text-xs leading-relaxed" style={{ color: "rgba(210,204,190,0.85)" }}>
                         {(sliderValues[project.slug] ?? 0) < 50 ? project.before : project.after}
                       </p>
                     </div>

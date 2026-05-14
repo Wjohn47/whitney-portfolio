@@ -18,10 +18,10 @@ const QUESTIONS = [
 
 const ANSWERS: Record<string, string> = {
   "What kind of work do you do?": "I work at the intersection of AI, customer experience, and operations. I build VoC programs, design AI adoption workshops, redesign workflows, and help organizations understand their customers better. Think of me as the person who makes complex systems feel simple.",
-  "Are you open to full-time roles?": "Yes — I'm actively exploring full-time opportunities in AI enablement, CX strategy, product operations, and AI training roles. I'm especially interested in companies that are serious about using AI responsibly and want someone who can bridge the gap between technical teams and real customers.",
-  "What AI tools do you work with?": "I work with ChatGPT, Claude, n8n for automation, Notion AI, and various AI-powered CX tools. I also teach others how to use these tools through my AI with Whit platform. I'm tool-agnostic — I care more about solving the right problem than using the trendiest stack.",
-  "Can you help my team adopt AI?": "Absolutely. I've designed and delivered AI literacy programs for teams of 10 to 200+. My approach is practical, plain-language, and hands-on. No jargon, no hype — just real skills people can use the next day. Reach out through the contact section to talk about what your team needs.",
-  "What does a VoC program look like?": "A good VoC program starts with listening architecture — where and how you collect feedback — and ends with a closed-loop system that actually changes decisions. I've built programs from scratch and redesigned broken ones. The key is making sure insights reach the people who can act on them.",
+  "Are you open to full-time roles?": "Yes, I'm actively exploring full-time opportunities in AI enablement, CX strategy, product operations, and AI training roles. I'm especially interested in companies that are serious about using AI responsibly and want someone who can bridge the gap between technical teams and real customers.",
+  "What AI tools do you work with?": "I work with ChatGPT, Claude, n8n for automation, Notion AI, and various AI-powered CX tools. I also teach others how to use these tools through my AI with Whit platform. I'm tool-agnostic. I care more about solving the right problem than using the trendiest stack.",
+  "Can you help my team adopt AI?": "Absolutely. I've designed and delivered AI literacy programs for teams of 10 to 200+. My approach is practical, plain-language, and hands-on. No jargon, no hype. Just real skills people can use the next day. Reach out through the contact section to talk about what your team needs.",
+  "What does a VoC program look like?": "A good VoC program starts with listening architecture (where and how you collect feedback) and ends with a closed-loop system that actually changes decisions. I've built programs from scratch and redesigned broken ones. The key is making sure insights reach the people who can act on them.",
   "How do I contact you?": "Scroll down to the contact section, or click the 'Let's Talk' button. You can also reach me at whitney@aiwithwhit.com. I respond within 48 hours.",
 };
 
@@ -33,7 +33,7 @@ interface AskWhitModalProps {
 
 export default function AskWhitModal({ open, onClose, onSelectPath }: AskWhitModalProps) {
   const [messages, setMessages] = useState<{ role: "whit" | "user"; text: string }[]>([
-    { role: "whit", text: "Hey — I'm Whit. What are you trying to understand? Ask me anything, or pick a question below." },
+    { role: "whit", text: "Hey, I'm Whit. What are you trying to understand? Ask me anything, or pick a question below." },
   ]);
   const [input, setInput] = useState("");
   const [isTyping, setIsTyping] = useState(false);
@@ -59,7 +59,7 @@ export default function AskWhitModal({ open, onClose, onSelectPath }: AskWhitMod
     setIsTyping(true);
 
     setTimeout(() => {
-      const answer = ANSWERS[text] || "Great question. I'd love to tell you more in person — scroll down to the contact section and let's set up a conversation.";
+      const answer = ANSWERS[text] || "Great question. I'd love to tell you more in person. Scroll down to the contact section and let's set up a conversation.";
       setMessages((prev) => [...prev, { role: "whit", text: answer }]);
       setIsTyping(false);
     }, 900);

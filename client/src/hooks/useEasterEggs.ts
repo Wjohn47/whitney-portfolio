@@ -41,7 +41,7 @@ export function useEasterEggs() {
         if (typedRef.current.includes("hire")) {
           typedRef.current = "";
           toast("👀 You typed 'hire'", {
-            description: "Smart. Let's talk — scroll to the contact section or click Ask Whit.",
+            description: "Smart. Let's talk. Scroll to the contact section or click Ask Whit.",
             duration: 7000,
             action: {
               label: "Contact",
@@ -55,18 +55,12 @@ export function useEasterEggs() {
         if (typedRef.current.includes("whit")) {
           typedRef.current = "";
           toast("◈ Hey, that's me!", {
-            description: "Whitney Johnson — AI Operations & CX Strategist. Nice to meet you.",
+            description: "Whitney Johnson, AI Operations & CX Strategist. Nice to meet you.",
             duration: 5000,
           });
         }
 
-        if (typedRef.current.includes("blaq")) {
-          typedRef.current = "";
-          toast("◆ BLAQ HAUS", {
-            description: "You know about BLAQ HAUS? We should definitely talk.",
-            duration: 6000,
-          });
-        }
+
       }
     };
 

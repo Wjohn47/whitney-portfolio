@@ -34,14 +34,14 @@ const PATHS = [
     subtitle: "Collaborator / Partner",
     description: "Explore partnership, community work, and shared projects.",
     accent: "#8be9fd",
-    tldr: "I'm building AI with Whit and BLAQ HAUS. I'm open to collaborations in AI education, community building, and human-centered tech.",
+    tldr: "I'm building AI with Whit. I'm open to collaborations in AI education, community building, and human-centered tech.",
   },
   {
     id: "explorer" as VisitorType,
     icon: "◌",
     title: "Just Exploring",
     subtitle: "Curious Visitor",
-    description: "Take the full tour — no agenda required.",
+    description: "Take the full tour. No agenda required.",
     accent: "#c9a0b4",
     tldr: "Welcome. Take your time. There are a few hidden things to find if you're curious enough.",
   },
@@ -87,7 +87,7 @@ export default function ChoosePathSection({ onSelect, selectedPath }: ChoosePath
           >
             Who are you?
           </h2>
-          <p className="mt-4 max-w-lg text-base leading-relaxed" style={{ color: "rgba(200,192,176,0.65)" }}>
+          <p className="mt-4 max-w-lg text-base leading-relaxed" style={{ color: "rgba(210,204,190,0.85)" }}>
             This portfolio adapts to you. Choose how you want to experience it.
           </p>
         </motion.div>
@@ -150,7 +150,7 @@ export default function ChoosePathSection({ onSelect, selectedPath }: ChoosePath
                 >
                   {path.subtitle}
                 </p>
-                <p className="text-sm leading-relaxed" style={{ color: "rgba(200,192,176,0.6)" }}>
+                <p className="text-sm leading-relaxed" style={{ color: "rgba(210,204,190,0.80)" }}>
                   {path.description}
                 </p>
 
@@ -166,7 +166,7 @@ export default function ChoosePathSection({ onSelect, selectedPath }: ChoosePath
                     <p className="font-mono-label text-xs mb-1" style={{ color: path.accent }}>
                       TLDR
                     </p>
-                    <p className="text-xs leading-relaxed" style={{ color: "rgba(200,192,176,0.75)" }}>
+                    <p className="text-xs leading-relaxed" style={{ color: "rgba(220,214,200,0.90)" }}>
                       {path.tldr}
                     </p>
                   </motion.div>

@@ -32,7 +32,7 @@ const EXPERTISE = [
     icon: "◎",
     title: "Workflow Architecture",
     label: "Operations",
-    description: "I map broken processes and design cleaner systems — reducing manual work, clarifying ownership, and connecting the right tools.",
+    description: "I map broken processes and design cleaner systems: reducing manual work, clarifying ownership, and connecting the right tools.",
     tags: ["Salesforce", "Zendesk", "n8n", "Process Design", "SOP Writing"],
     size: "medium",
     accent: "#e2c98a",
@@ -42,7 +42,7 @@ const EXPERTISE = [
     icon: "◌",
     title: "Human-Centered AI",
     label: "Ethics + Access",
-    description: "I build AI experiences around real people — prioritizing accessibility, plain language, and community-first design.",
+    description: "I build AI experiences around real people, prioritizing accessibility, plain language, and community-first design.",
     tags: ["AI Ethics", "Accessibility", "Community", "Education"],
     size: "small",
     accent: "#c9a0b4",
@@ -62,7 +62,7 @@ const EXPERTISE = [
     icon: "◇",
     title: "Product Operations",
     label: "Translation",
-    description: "I bridge customer needs, operations, product teams, and tools — translating complexity into clear requirements and roadmaps.",
+    description: "I bridge customer needs, operations, product teams, and tools, translating complexity into clear requirements and roadmaps.",
     tags: ["Product Ops", "Requirements", "Stakeholder Mgmt", "Roadmapping"],
     size: "small",
     accent: "#8be9fd",
@@ -168,7 +168,7 @@ function BentoCard({ card, index, visible }: { card: typeof EXPERTISE[0]; index:
 
         <p
           className="text-sm leading-relaxed flex-1 mb-4"
-          style={{ color: "rgba(200,192,176,0.65)" }}
+          style={{ color: "rgba(210,204,190,0.82)" }}
         >
           {card.description}
         </p>
@@ -236,7 +236,7 @@ export default function ExpertiseSection() {
               </span>
             </h2>
           </div>
-          <p className="max-w-sm text-sm leading-relaxed" style={{ color: "rgba(200,192,176,0.55)" }}>
+          <p className="max-w-sm text-sm leading-relaxed" style={{ color: "rgba(210,204,190,0.70)" }}>
             My work lives at the intersection of AI, customer experience, and operational design. I make complex systems feel simple.
           </p>
         </motion.div>

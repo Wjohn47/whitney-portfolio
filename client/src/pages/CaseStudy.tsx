@@ -26,7 +26,7 @@ const CASE_STUDIES: Record<string, {
     accent: "#9b6dff",
     tags: ["VoC Strategy", "Qualtrics", "Journey Mapping", "CSAT", "CX Design"],
     overview: "A mid-size financial services company was drowning in customer feedback with no system to act on it. CSAT scores were declining, frontline teams felt unheard, and leadership had no visibility into what customers actually needed. I was brought in to redesign the entire feedback architecture.",
-    background: "The organization had 6 separate tools collecting feedback — post-call surveys, email NPS, in-app ratings, social monitoring, complaint logs, and a manual spreadsheet process. None of them talked to each other. Insights were delayed by 3+ weeks. No one owned the data.",
+    background: "The organization had 6 separate tools collecting feedback: post-call surveys, email NPS, in-app ratings, social monitoring, complaint logs, and a manual spreadsheet process. None of them talked to each other. Insights were delayed by 3+ weeks. No one owned the data.",
     previous: "The previous state was characterized by tool fragmentation, no unified tagging taxonomy, 3-week lag from feedback to insight, no closed-loop follow-up process, and frontline teams who had stopped trusting the data because it never led to action.",
     research: [
       "Conducted 24 stakeholder interviews across CX, operations, product, and leadership to map current pain points",
@@ -43,7 +43,7 @@ const CASE_STUDIES: Record<string, {
       { metric: "Stakeholder Adoption", value: "94% of weekly reports opened by leadership" },
       { metric: "Customers Impacted", value: "500,000+" },
     ],
-    reflection: "The hardest part wasn't the technology — it was convincing people that the data could be trusted again. Trust had been broken by years of feedback going nowhere. The closed-loop process was the turning point: when customers started getting follow-up calls, and when frontline teams started seeing their feedback actually change decisions, the whole culture shifted.",
+    reflection: "The hardest part wasn't the technology. It was convincing people that the data could be trusted again. Trust had been broken by years of feedback going nowhere. The closed-loop process was the turning point: when customers started getting follow-up calls, and when frontline teams started seeing their feedback actually change decisions, the whole culture shifted.",
   },
   "ai-adoption-workshop": {
     title: "AI Adoption Workshop Series",
@@ -60,7 +60,7 @@ const CASE_STUDIES: Record<string, {
       "Interviewed 8 'early adopters' who were already using AI tools to understand what made them successful",
       "Benchmarked against 4 other AI adoption programs in similar industries",
     ],
-    solution: "Designed a 6-session progressive curriculum starting with fundamentals and building to role-specific applications. Each session included a 20-minute demo, 30-minute hands-on practice, and 10-minute Q&A. Created role-specific prompt libraries and cheat sheets. Built a peer support Slack channel. Established 'AI Champions' — early adopters who could support their colleagues between sessions.",
+    solution: "Designed a 6-session progressive curriculum starting with fundamentals and building to role-specific applications. Each session included a 20-minute demo, 30-minute hands-on practice, and 10-minute Q&A. Created role-specific prompt libraries and cheat sheets. Built a peer support Slack channel. Established AI Champions, early adopters who could support their colleagues between sessions.",
     results: [
       { metric: "Tool Adoption", value: "78% active users at 90 days" },
       { metric: "Confidence Score", value: "Increased from 18% to 71% 'confident'" },
@@ -68,7 +68,7 @@ const CASE_STUDIES: Record<string, {
       { metric: "Session Attendance", value: "91% average across all 6 sessions" },
       { metric: "AI Champions", value: "24 peer supporters trained" },
     ],
-    reflection: "The biggest insight was that people weren't afraid of AI — they were afraid of looking stupid in front of their colleagues. Once we made the learning environment safe and the examples relevant to their actual jobs, adoption happened naturally. The peer champion model was the most impactful thing we did.",
+    reflection: "The biggest insight was that people weren't afraid of AI. They were afraid of looking stupid in front of their colleagues. Once we made the learning environment safe and the examples relevant to their actual jobs, adoption happened naturally. The peer champion model was the most impactful thing we did.",
   },
   "workflow-redesign": {
     title: "Customer Operations Workflow Redesign",
@@ -93,7 +93,7 @@ const CASE_STUDIES: Record<string, {
       { metric: "Error Rate", value: "-58% data entry errors" },
       { metric: "Team Satisfaction", value: "+24 points on internal survey" },
     ],
-    reflection: "The most surprising finding was how much tribal knowledge existed in the team — workarounds and shortcuts that nobody had ever documented. Capturing that knowledge and building it into the official process was as important as the automation itself. The team went from feeling like they were fighting the system to feeling like the system was working for them.",
+    reflection: "The most surprising finding was how much tribal knowledge existed in the team: workarounds and shortcuts that nobody had ever documented. Capturing that knowledge and building it into the official process was as important as the automation itself. The team went from feeling like they were fighting the system to feeling like the system was working for them.",
   },
 };
 
@@ -131,9 +131,9 @@ export default function CaseStudy() {
           <Link href="/">
             <span
               className="font-mono-label text-xs flex items-center gap-2 transition-colors duration-200 w-fit"
-              style={{ color: "rgba(200,192,176,0.5)" }}
+              style={{ color: "rgba(210,204,190,0.68)" }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "#f0ebe0")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(200,192,176,0.5)")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(210,204,190,0.68)")}
             >
               ← Back to portfolio
             </span>
@@ -197,7 +197,7 @@ export default function CaseStudy() {
               className="mb-12"
             >
               <span className="section-label block mb-4">{section.label}</span>
-              <p className="text-base leading-relaxed" style={{ color: "rgba(200,192,176,0.75)" }}>
+              <p className="text-base leading-relaxed" style={{ color: "rgba(220,214,200,0.90)" }}>
                 {section.content}
               </p>
             </motion.div>
@@ -215,7 +215,7 @@ export default function CaseStudy() {
               {study.research.map((item, i) => (
                 <div key={i} className="flex items-start gap-3">
                   <span style={{ color: study.accent, fontSize: "0.5rem", marginTop: "6px", flexShrink: 0 }}>◆</span>
-                  <p className="text-base leading-relaxed" style={{ color: "rgba(200,192,176,0.75)" }}>{item}</p>
+                  <p className="text-base leading-relaxed" style={{ color: "rgba(220,214,200,0.90)" }}>{item}</p>
                 </div>
               ))}
             </div>
@@ -229,7 +229,7 @@ export default function CaseStudy() {
             className="mb-12"
           >
             <span className="section-label block mb-4">Solution</span>
-            <p className="text-base leading-relaxed" style={{ color: "rgba(200,192,176,0.75)" }}>
+            <p className="text-base leading-relaxed" style={{ color: "rgba(220,214,200,0.90)" }}>
               {study.solution}
             </p>
           </motion.div>
@@ -257,7 +257,7 @@ export default function CaseStudy() {
                   >
                     {result.value}
                   </div>
-                  <div className="font-mono-label text-xs" style={{ color: "rgba(200,192,176,0.5)" }}>
+                  <div className="font-mono-label text-xs" style={{ color: "rgba(210,204,190,0.68)" }}>
                     {result.metric}
                   </div>
                 </div>

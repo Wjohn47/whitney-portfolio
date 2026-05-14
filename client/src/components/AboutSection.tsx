@@ -9,16 +9,16 @@ import { motion } from "framer-motion";
 const ABOUT_BG = "https://d2xsxph8kpxj0f.cloudfront.net/110102467/Ze9D6rPfroPwfnzFMpwZ4R/whitney-about-texture-GLHth9Ez69mScSrEJcu5Jn.webp";
 
 const TIMELINE = [
-  { year: "2024–Now", role: "Founder, AI with Whit", note: "AI education & automation for everyday people" },
-  { year: "2022–2024", role: "Senior CX Strategist", note: "VoC program design, CSAT improvement, AI integration" },
-  { year: "2019–2022", role: "Customer Operations Lead", note: "Workflow architecture, team training, process design" },
-  { year: "2015–2019", role: "CX Analyst & Trainer", note: "Data analysis, customer journey mapping, facilitation" },
+  { year: "2023 - Present", role: "Founder, AI with Whit", note: "AI education & automation for everyday people" },
+  { year: "2021 - 2023", role: "Senior CX Strategist", note: "VoC program design, CSAT improvement, AI integration" },
+  { year: "2019 - 2021", role: "Customer Operations Lead", note: "Workflow architecture, team training, process design" },
+  { year: "2017 - 2019", role: "CX Analyst & Trainer", note: "Data analysis, customer journey mapping, facilitation" },
 ];
 
 const TOOLS = [
   "Salesforce", "Zendesk", "Qualtrics", "Medallia", "n8n",
   "ChatGPT", "Claude", "Notion", "Miro", "Figma",
-  "Google Analytics", "Tableau", "Slack", "Asana",
+  "Google Analytics", "Tableau", "SQL", "Slack", "Asana",
 ];
 
 export default function AboutSection() {
@@ -76,14 +76,14 @@ export default function AboutSection() {
               transition={{ duration: 0.7, delay: 0.15 }}
               className="space-y-5 mb-10"
             >
-              <p className="text-base leading-relaxed" style={{ color: "rgba(200,192,176,0.75)" }}>
-                I'm Whitney Johnson — a customer experience strategist who fell in love with AI not because of the technology, but because of what it can do for people. I've spent over a decade building systems that help organizations actually understand their customers.
+              <p className="text-base leading-relaxed" style={{ color: "rgba(220,214,200,0.90)" }}>
+                I'm Whitney Johnson, a customer experience strategist who fell in love with AI not because of the technology, but because of what it can do for people. I've spent over a decade building systems that help organizations actually understand their customers.
               </p>
-              <p className="text-base leading-relaxed" style={{ color: "rgba(200,192,176,0.65)" }}>
+              <p className="text-base leading-relaxed" style={{ color: "rgba(210,204,190,0.82)" }}>
                 Now I'm applying that same lens to AI: making it accessible, practical, and human. Through <span style={{ color: "#e2c98a" }}>AI with Whit</span>, I teach people how to use AI tools without the overwhelm. Through my consulting work, I help organizations build AI-powered CX systems that don't lose the human touch.
               </p>
-              <p className="text-base leading-relaxed" style={{ color: "rgba(200,192,176,0.65)" }}>
-                I believe the best AI systems are invisible — they just make things work better. My job is to design those systems and teach the people who run them.
+              <p className="text-base leading-relaxed" style={{ color: "rgba(210,204,190,0.82)" }}>
+                I believe the best AI systems are invisible. They just make things work better. My job is to design those systems and teach the people who run them.
               </p>
             </motion.div>
 
@@ -99,7 +99,7 @@ export default function AboutSection() {
                 className="font-display text-xl italic leading-relaxed"
                 style={{ color: "#f0ebe0" }}
               >
-                "Complexity is just clarity that hasn't been designed yet."
+                "AI is not passive. The people shaping the future will be the ones who understand it deeply enough to question it, build with it, and use it intentionally."
               </p>
             </motion.blockquote>
 
@@ -171,7 +171,7 @@ export default function AboutSection() {
                     >
                       {item.role}
                     </h4>
-                    <p className="text-sm" style={{ color: "rgba(200,192,176,0.55)" }}>
+                    <p className="text-sm" style={{ color: "rgba(210,204,190,0.70)" }}>
                       {item.note}
                     </p>
                   </div>
@@ -193,14 +193,14 @@ export default function AboutSection() {
               <p className="section-label mb-3">Education & Certifications</p>
               <div className="space-y-2">
                 {[
-                  "Customer Experience Professional (CCXP) — In Progress",
-                  "AI Fundamentals — Google & DeepLearning.AI",
+                  "Customer Experience Professional (CCXP) - In Progress",
+                  "AI Fundamentals - Google & DeepLearning.AI",
                   "Salesforce Certified Administrator",
                   "Qualtrics XM Certified",
                 ].map((cert) => (
                   <div key={cert} className="flex items-start gap-2">
                     <span style={{ color: "#e2c98a", fontSize: "0.6rem", marginTop: "4px" }}>◆</span>
-                    <p className="text-sm" style={{ color: "rgba(200,192,176,0.65)" }}>{cert}</p>
+                    <p className="text-sm" style={{ color: "rgba(210,204,190,0.82)" }}>{cert}</p>
                   </div>
                 ))}
               </div>

@@ -94,7 +94,7 @@ export default function HeroSection({ onAskWhit, onChoosePath }: HeroSectionProp
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-6"
         >
-          <span className="section-label">Portfolio · 2025</span>
+          <span className="section-label">Portfolio · 2026</span>
         </motion.div>
 
         {/* Name */}
@@ -158,9 +158,9 @@ export default function HeroSection({ onAskWhit, onChoosePath }: HeroSectionProp
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1.0 }}
           className="text-base md:text-lg mb-10 max-w-xl leading-relaxed"
-          style={{ color: "rgba(200,192,176,0.75)" }}
+          style={{ color: "rgba(220,214,200,0.90)" }}
         >
-          I translate complexity into clarity — building AI systems, customer insight programs, and operational workflows that actually work for real people.
+          I translate complexity into clarity, building AI systems, customer insight programs, and operational workflows that actually work for real people.
         </motion.p>
 
         {/* CTAs */}
@@ -186,7 +186,7 @@ export default function HeroSection({ onAskWhit, onChoosePath }: HeroSectionProp
           transition={{ duration: 0.6, delay: 1.5 }}
           className="absolute bottom-8 right-6 md:right-12 flex flex-col items-center gap-2"
         >
-          <span className="font-mono-label text-xs" style={{ color: "rgba(200,192,176,0.35)", writingMode: "vertical-rl" }}>
+          <span className="font-mono-label text-xs" style={{ color: "rgba(210,204,190,0.55)", writingMode: "vertical-rl" }}>
             scroll
           </span>
           <div
@@ -218,7 +218,7 @@ export default function HeroSection({ onAskWhit, onChoosePath }: HeroSectionProp
                 >
                   {stat.value}
                 </div>
-                <div className="font-mono-label text-xs" style={{ color: "rgba(200,192,176,0.5)" }}>
+                <div className="font-mono-label text-xs" style={{ color: "rgba(210,204,190,0.68)" }}>
                   {stat.label}
                 </div>
               </div>
