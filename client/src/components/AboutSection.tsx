@@ -17,8 +17,9 @@ const TIMELINE = [
 
 const TOOLS = [
   "Salesforce", "Zendesk", "Qualtrics", "Medallia", "n8n",
-  "ChatGPT", "Claude", "Notion", "Miro", "Figma",
-  "Google Analytics", "Tableau", "SQL", "Slack", "Asana",
+  "ChatGPT", "Claude", "Perplexity", "Manus", "Make",
+  "Notion", "Miro", "Figma", "Google Analytics", "Tableau",
+  "SQL", "Slack", "Asana",
 ];
 
 export default function AboutSection() {
@@ -193,7 +194,8 @@ export default function AboutSection() {
               <p className="section-label mb-3">Education & Certifications</p>
               <div className="space-y-2">
                 {[
-                  "Customer Experience Professional (CCXP) - In Progress",
+                  "Texas Department of Information Resources Certified",
+                  "AI Fluency for Educators - Anthropic",
                   "AI Fundamentals - Google & DeepLearning.AI",
                   "Salesforce Certified Administrator",
                   "Qualtrics XM Certified",

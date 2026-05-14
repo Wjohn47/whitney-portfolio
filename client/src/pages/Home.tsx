@@ -2,6 +2,7 @@
    HOME PAGE — Obsidian Intelligence
    Assembles all portfolio sections with state management for
    visitor type, Ask Whit modal, and easter eggs.
+   Smooth section transitions via gradient dividers + scroll-reveal.
    ============================================================ */
 
 import { useState, useRef } from "react";
@@ -14,6 +15,7 @@ import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import AskWhitModal from "@/components/AskWhitModal";
 import Footer from "@/components/Footer";
+import SectionDivider from "@/components/SectionDivider";
 import { useEasterEggs } from "@/hooks/useEasterEggs";
 
 export default function Home() {
@@ -30,7 +32,6 @@ export default function Home() {
 
   const handleSelectPath = (type: VisitorType) => {
     setVisitorType(type);
-    // Scroll to work after a brief delay
     setTimeout(() => {
       document.querySelector("#work")?.scrollIntoView({ behavior: "smooth" });
     }, 400);
@@ -47,6 +48,9 @@ export default function Home() {
         onChoosePath={handleChoosePath}
       />
 
+      {/* Hero → Choose Path transition */}
+      <SectionDivider variant="violet" />
+
       {/* Choose Your Path */}
       <div ref={pathRef}>
         <ChoosePathSection
@@ -55,17 +59,32 @@ export default function Home() {
         />
       </div>
 
+      {/* Choose Path → Work transition */}
+      <SectionDivider variant="default" />
+
       {/* Work / Case Studies */}
       <WorkSection visitorType={visitorType} />
+
+      {/* Work → Expertise transition */}
+      <SectionDivider variant="violet" />
 
       {/* Expertise (MagicBento) */}
       <ExpertiseSection />
 
+      {/* Expertise → About transition */}
+      <SectionDivider variant="champagne" />
+
       {/* About */}
       <AboutSection />
 
+      {/* About → Contact transition */}
+      <SectionDivider variant="violet" />
+
       {/* Contact */}
       <ContactSection visitorType={visitorType} />
+
+      {/* Contact → Footer transition */}
+      <SectionDivider variant="fade" />
 
       {/* Footer */}
       <Footer />

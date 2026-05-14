@@ -253,6 +253,30 @@
   animation: pulse-glow 3s ease-in-out infinite;
 }
 
+/* Section reveal — used by SectionDivider shimmer line */
+@keyframes shimmer-travel {
+  0% { transform: translateX(-100%); opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+.animate-shimmer-travel {
+  animation: shimmer-travel 2.4s cubic-bezier(0.23, 1, 0.32, 1) infinite;
+}
+
+/* Scroll-reveal base state — sections start invisible and slide up */
+.section-reveal {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.section-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* ============================================================
    LAYOUT COMPONENTS
    ============================================================ */
