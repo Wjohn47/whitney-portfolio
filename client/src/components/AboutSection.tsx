@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 const ABOUT_BG = "https://d2xsxph8kpxj0f.cloudfront.net/110102467/Ze9D6rPfroPwfnzFMpwZ4R/whitney-about-texture-GLHth9Ez69mScSrEJcu5Jn.webp";
-const HEADSHOT = "/manus-storage/whitney-headshot_47def6d7.webp";
+const HEADSHOT = const HEADSHOT = "/headshotwj.png";
 
 const TIMELINE = [
   { year: "2023 - Present", role: "Founder, AI with Whit", note: "AI education & automation for everyday people" },
